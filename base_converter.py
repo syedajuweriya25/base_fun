@@ -2,21 +2,29 @@ import sys
 
 # calls all functions
 def main():
-    number = input('Number: ')
+    number = input('Number: ').strip()
     base_number = input('Number is in base: ')
     base = input('To which base conversion: ')
+
+    # dealing with negative numbers
+    changed = False
+    if number.startswith('-'):
+        number = number.replace('-', '')
+        changed = True
+
     n, b = to_b10(number, base_number, base)
     digits = base_digits(n, b)
     final_answer = base_conversion(digits)
-    print(f'\nValue of {number} in base {base}: {final_answer}\n')
+    if changed == True:
+        print(f'\nValue of -{number} in base {base}: -{final_answer}\n')
+    else:
+        print(f'\nValue of {number} in base {base}: {final_answer}\n')
 
 # error checking and conversion to base 10
 def to_b10(n, b_n, b):
     try:
         num = int(n, int(b_n))
         base = int(b)
-        if num < 0:
-            sys.exit('Number needs to be positive\n')
         if (base > 36) or (base <= 1):
             sys.exit('base range is 2 to 36\n')
         return num, base
@@ -44,4 +52,5 @@ def base_conversion(digits):
 
 if __name__ == '__main__':
     main()
+
 
