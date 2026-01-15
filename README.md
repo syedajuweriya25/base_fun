@@ -43,7 +43,7 @@ It contains 4 self defined functions
 
 ## What I Learned
 1. Learnt base conversion logic, mapping and encoding logic.
-2. The relation between floor devision and modulo operator and their usage in base conversions.
+2. The relation between floor division and modulo operator and their usage in base conversions.
 3. Translation base conversion logic (mathematical logic) into working code.
 4. Clean error handling.
 5. Testing and looking for edge cases.
@@ -55,11 +55,11 @@ It contains 4 self defined functions
 + **Step by step conversion:** Show detailed conversion process for learning.
 ### Extension of Project
 + Unit test file
-+ A fun base converter which allow users to select maping characters(like emojis, special characters etc)
++ A fun base converter which allow users to select mapping characters(like emojis, special characters etc)
 + Extended base support upto 64 bases
 
 ## Contribution
-Contributions are welcomed to enchance Base Converter
+Contributions are welcomed to enhance Base Converter
 
 ### How To Contribute
 1. **Describe issue or new features:** clear description, steps and comparison.
