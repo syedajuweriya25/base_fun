@@ -1,12 +1,12 @@
 # Base_converter
 
 ## Overview
-user can give any number in any base(upto 32), specify its original base and desired target base, and it converts seamlessly.
+user can give any number in any base(upto 36), specify its original base and desired target base, and it converts seamlessly.
 
 ## Features
 1. It converts a number of any base may it be **positive or negative** to user desired base.
 2. It handles invalid bases 1 and zero by exiting with an error message.
-3. It handles bases above 32 by exiting with an error message specifying the range of base.
+3. It handles bases above 36 by exiting with an error message specifying the range of base.
 4. Program completes after each conversion.
 5. Clear understandable prompts.
 
