@@ -1,7 +1,5 @@
 # Base_converter
 
-## Description
-### 
 ## Overview
 user can give any number in any base(upto 32), specify its original base and desired target base, and it converts seamlessly.
 
